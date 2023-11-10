@@ -29,8 +29,28 @@ github_username:  caramel-juni
 
 # Build settings
 theme: minima
+
+# plugins for the theme
 plugins:
   - jekyll-feed
+
+# minima config
+
+
+
+# dark mode options: use everything below:
+# -----------------------------------------
+# remote_theme: jekyll/minima
+
+# minima:
+#   skin: dark # dark mode
+
+# plugins:
+#   - jekyll-feed
+#   - jekyll-remote-theme # dark mode theme
+# -----------------------------------------
+
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
