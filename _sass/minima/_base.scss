@@ -102,10 +102,20 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+
+// styling for post titles <h1>
+
+h1 {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family-acme;
   font-weight: $base-font-weight;
 }
 
+
+// styling for other headings <h2-6>
+h2, h3, h4, h5, h6 {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $body-font-fam-caveat;
+  font-weight: $base-font-weight;
+}
 
 
 /**

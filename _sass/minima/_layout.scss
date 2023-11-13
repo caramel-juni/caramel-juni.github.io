@@ -227,9 +227,12 @@
   color: $brand-color;
 }
 
+// change font for post titles on home page (index.html)
 .post-link {
+  font-family: $base-font-family-acme;
   display: block;
   @include relative-font-size(1.5);
+
 }
 
 

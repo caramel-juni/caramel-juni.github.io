@@ -129,6 +129,13 @@ Have the following line in your config file:
 theme: minima
 ```
 
+### Customising Fonts:
+
+1. import font in `head.html` like so:  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One">
+2. set variable for font in `initialize.scss` like so:   $base-font-family-patua-one: "Patua One", sans-serif;
+3. find whatever aspect of the site you want to change, and check what "class" is applied to it (visit http://127.0.0.1:4000/ and click around to inspect): e.g. class="post-link"
+4. search for "post-link" in `_layout.scss` and add desired styling there: e.g.   font-family: $base-font-family-patua-one;
+
 
 ### Customizing templates
 
