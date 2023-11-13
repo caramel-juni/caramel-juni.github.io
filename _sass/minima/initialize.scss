@@ -2,12 +2,31 @@
 
 // Define defaults for each variable.
 
-$base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;
-$code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+// how to change default fonts & weights etc.: https://simonkjohnston.life/code/2019/12/20/Minima-Typography.html
+
+$base-font-family: "Quicksand", sans-serif !default;
 $base-font-size:   16px !default;
-$base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
+$base-font-weight: 500 !default;
+$small-font-size:  $base-font-size * 0.8 !default;
 $base-line-height: 1.5 !default;
+
+$code-font-family: "Menlo", "Inconsolata", "Consolas", "Roboto Mono", "Ubuntu Mono", "Liberation Mono", "Courier New", monospace;
+
+
+
+// variable for <h1> font family (applied as default for all <h1> titles on site)
+$base-font-family-quicksand: "Quicksand", sans-serif;
+$base-font-family-acme: "Acme", sans-serif;
+$base-font-family-sora: "Sora", sans-serif;
+$base-font-family-patua-one: "Patua One", sans-serif;
+
+
+// variable for <h2-6> font family (applied as default across the site)
+$body-font-fam-caveat: "Caveat", sans-serif;
+$base-font-family-header: "Tangerine", sans-serif;
+
+
+// $base-font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", "Apple Color Emoji", Roboto, Helvetica, Arial, sans-serif !default;
 
 $spacing-unit:     30px !default;
 
