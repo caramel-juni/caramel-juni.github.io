@@ -18,7 +18,7 @@ In the hope that this can be of use to others out there, I have written up my pr
 
 1. Plug in an ethernet cable to an unused port on the pfSense box. In my case, this is **ETH3** (gray cable).
     <img src="\assets\images\2023-11-13-pfsense-and-unifi\eth3.jpg" width="" height="">
-2. Login to the pfSense router GUI via the browser (default address is `192.168.0.1`, or `XXX.XXX.XXX.1` depending on how you've setup the management LAN it's on), and navigate to `Interfaces > Switches > Ports`. 
+2. Login to the pfSense router GUI via the browser (default address is `192.168.0.1`, or `XXX.XXX.XXX.1` depending on how you've setup the management LAN it's on), and navigate to **Interfaces / Switches / Ports**. 
 
     <img src="\assets\images\2023-11-13-pfsense-and-unifi\image.png" width="50%" height="50%">
 
@@ -27,21 +27,30 @@ In the hope that this can be of use to others out there, I have written up my pr
 
     ![Alt text](\assets\images\2023-11-13-pfsense-and-unifi\image0.png)
 
-4. Interfaces > Switches > VLANs: Click “+ Add Tag” 
+4. **Interfaces / Switches / VLANs**: Click `+ Add Tag`
 
     ![Alt text](\assets\images\2023-11-13-pfsense-and-unifi\image-1.png)
 
-5. Add whatever VLAN tag you wish to target (in this case `80`), give it a description, and add the **members, AKA the ETH ports on the pfSense that will allow this VLAN through.** 
+5. Add whatever VLAN tag you wish to target (in this case `80`), give it a description, and add the **Members**, AKA <mark style="color:rgb(199, 255, 252)"><span style="color: rgb(0, 0, 0); font-weight: bold; font-style: italic;">the numbered ETH ports on the pfSense that will allow this VLAN through.</span></mark>
     
-    I have added ETH3 as a member, and told pfSense to expect the traffic passing through to be **untagged** (and said **untagged traffic will be assigned a VLAN tag of 80, which is ETH3’s Port VID** - as specified in Step 1) 
-    *!! ALWAYS ADD 9 & 10 tagged, by default (beyond the scope of this tutorial but will write an article about it soon. or read the docs [here](https://docs.netgate.com/pfsense/en/latest/solutions/xg-7100-1u/switch-overview.html)) !*!**
+    **I have added ETH3 as a member**, and told pfSense to expect the traffic passing through to be **untagged** (no 't'). 
     
-    **Note:** 9t = Port 9, expecting & passing VLAN-tagged traffic ONLY.
-              9 = Port 9, expecting & passing **untagged** traffic ONLY.
-    
+    This means that said **untagged traffic will be assigned a VLAN tag of 80: ETH3’s Port VID** (as specified in Step 1).
+
     ![Alt text](\assets\images\2023-11-13-pfsense-and-unifi\image-2.png)
 
     ![Alt text](\assets\images\2023-11-13-pfsense-and-unifi\image-3.png)
+    
+    ***ALWAYS ADD 9 & 10 tagged, by default (beyond the scope of this tutorial but will write an article about it soon. or read the docs [here](https://docs.netgate.com/pfsense/en/latest/solutions/xg-7100-1u/switch-overview.html))***
+    
+
+    ***Key:*** 
+    
+    *9t = Port 9, expecting & passing VLAN-tagged traffic ONLY.*
+    
+    *9 = Port 9, expecting & passing **untagged** traffic ONLY.*
+    
+
 
 6. Interfaces > Assignments > VLANs. Create VLAN 80 on the interface corresponding to ETH3 () or a lagg group it’s part of, if any have been created by default/you. 
 Assign that interface & VLAN on the Interface Assignments tab
