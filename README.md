@@ -137,6 +137,10 @@ theme: minima
 4. search for "post-link" in `_layout.scss` and add desired styling there: e.g.   font-family: $base-font-family-patua-one;
 
 
+### Customising Colours (for auto template)
+1. go to `_sass/minima/skins/auto.scss`
+2. play w colours there, using browser (http://127.0.0.1:4000/) to and click around to inspect what styles are used where.
+
 ### Customizing templates
 
 To override the default structure and style of minima, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
