@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Setting up a single Splunk Forwarder to send different data to multiple indexes"
-categories: misc
+categories: techtuts
 ---
 
 ## Pre-requisites:

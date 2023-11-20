@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Initialising a pfSense port to handle VLAN traffic tagged by a UniFi external switch"
-categories: misc
+categories: techtuts
 ---
 
 <img src="" width="" height="">
