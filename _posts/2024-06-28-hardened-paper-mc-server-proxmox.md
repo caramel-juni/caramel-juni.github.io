@@ -178,8 +178,8 @@ on the port they're plugged into.***
  -->
 
 <h2 class="centre-h2 bold"> And now... you're done! </h2>
-
-<h3 class="centre-h2"> Now you should be able to use a UniFi switch to tag traffic coming through particular ports with specified VLAN tags, & have it routed to the corresponding VLAN network on the pfsense! </h3>
+<!-- 
+<h3 class="centre-h2"> Now you should be able to use a UniFi switch to tag traffic coming through particular ports with specified VLAN tags, & have it routed to the corresponding VLAN network on the pfsense! </h3> -->
 
 <div class="centre-h2"> <img src="\assets\images\2023-11-13-pfsense-and-unifi\celebrate.gif"> </div>
 
