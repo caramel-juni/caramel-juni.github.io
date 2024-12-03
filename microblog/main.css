@@ -58,13 +58,27 @@ body {
     grid-area: address;
     padding: 1% 2%;
     font-weight: bold;
+    display: flex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  #browser-icons {
+    padding: 1%;
+    display: inline-block;
+    line-height: 150%;
+    text-align: left;
+    
+
+    
   }
 
   #address {
     font-weight: normal;
     font-size: 16px;
     margin-left: 30px;
-    padding: .5% 1%;
+    padding: 1%;
     border: 1px solid purple;
     border-radius: 20px;
     background-color: rgb(253, 236, 255);
@@ -72,6 +86,10 @@ body {
     width: 80%;
     line-height: 150%;
     text-align: left;
+        overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
     
   }
 
