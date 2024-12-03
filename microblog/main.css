@@ -67,7 +67,7 @@ body {
 
   }
 
-  .browser-icons {
+  #browser-icons {
     padding: 1%;
     text-align: left;
     font-size: 20px;
