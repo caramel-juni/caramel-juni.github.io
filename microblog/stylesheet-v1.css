@@ -102,7 +102,7 @@ body {
   .url-like-input {
     flex: 1;
     /* ^^ fills available space in flexbox */
-    color: #4b81bd;
+    color: #bd4b8d;
     font-family: inherit;
     font-size: inherit;
     cursor: text;
