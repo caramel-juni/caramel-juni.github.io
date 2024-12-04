@@ -6,7 +6,7 @@
 }
 
 :root {
-  --pink: rgb(202, 105, 181);
+  --pink: rgb(197, 103, 177);
   --light-pink: rgb(226, 80, 136);
   --dark-purple: rgb(88, 2, 60);
   --magenta: rgb(95, 2, 48);
@@ -123,7 +123,7 @@ body {
     grid-area: microblog;
     background: linear-gradient(
       0deg,
-      rgb(187, 115, 163) 0%,
+      rgb(151, 96, 133) 0%,
       var(--pink) 100%);
     display: block;
     width: 100%;
