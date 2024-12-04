@@ -49,8 +49,8 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: auto;
     position: static;
-    margin: 50px 10%;
-    max-height: 90vh;
+/*     margin: 50px 10%;
+    max-height: 90vh; */
     border: 2px  var(--magenta) solid;
     overflow-y: auto;
     box-shadow: 3px 3px 10px var(--dark);
@@ -67,8 +67,6 @@ body {
     white-space: nowrap;
     line-height: 150%;
     font-size: 16px;
-    max-height: min-content;
-
   }
 
   #browser-icons {
