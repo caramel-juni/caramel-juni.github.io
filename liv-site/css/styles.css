@@ -1,15 +1,13 @@
-:root {
-  --fonts: gaegu-l, ms pgothic, arial;
-}
 /* styles.css */
+
 body {
-    font-family: Growing Garden, Arial, sans-serif;
+    font-family: 'Gaegu', Arial, sans-serif;
     background: url(/liv-site/site-imgs/plant.webp) no-repeat;
     background-size: cover;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     height: 100vh;
   }
@@ -21,15 +19,34 @@ body {
     padding: 20px;
     border: #012b57 solid 5px;
     border-radius: 8px;
-    margin: 10vw;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
   }
+
+  .login-title {
+    padding: 5px;
+    margin: 20px;
+    background-color: rgb(249, 213, 255);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  #login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
   
   h1 {
-    margin-bottom: 20px;
+    margin:auto;
     font-weight: light;
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
   }
   
   .input-group {
@@ -40,8 +57,12 @@ body {
   .input-group label {
     display: block;
     margin-bottom: 5px;
-    font-size: 14px;
+    font-size: 20px;
     justify-content: center;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Pink Tape';
+    font-size: medium;
   }
   
   .input-group input {
@@ -50,23 +71,30 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-family: 'Pink Tape';
   }
   
   button {
-    background-color: #007bff;
-    color: white;
-    border: none;
+    background-color: rgb(249, 213, 255);
+    color: rgb(0, 0, 0);
+    border: #012b57 solid 3px;
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
+    max-width: fit-content;
+    font-family: 'Gaegu', Arial, sans-serif;
+
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #7d00b3;
+    color: rgb(255, 255, 255);
   }
   
   #error-message {
     color: red;
     font-size: 14px;
+    font-family: 'Cozy Kitty';
+    font-weight: bold;
     margin-top: 10px;
   }
