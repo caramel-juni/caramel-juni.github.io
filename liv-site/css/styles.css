@@ -1,0 +1,72 @@
+:root {
+  --fonts: gaegu-l, ms pgothic, arial;
+}
+/* styles.css */
+body {
+    font-family: Growing Garden, Arial, sans-serif;
+    background: url(/liv-site/site-imgs/plant.webp) no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    background: url(/liv-site/site-imgs/snowfall.webp);
+    background-color: rgb(255, 136, 243);
+    background-size: cover;
+    padding: 20px;
+    border: #012b57 solid 5px;
+    border-radius: 8px;
+    margin: 10vw;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-weight: light;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    justify-content: center;
+  }
+  
+  .input-group input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+  }
