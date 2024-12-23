@@ -86,6 +86,7 @@ float:right;
 width:50%;
 vertical-align:top;
 padding:10px;
+/* below height value needs to change as is hacky */
 height:100vh;
 margin-top:30px;
 /*background:rgba(204,129,247,0.5);*/
@@ -172,22 +173,17 @@ border: 1px dotted #be778d;
 border-radius: 0px;
 }
 
-/* @media screen and (max-aspect-ratio:16/9) {
- .body{
-   width:400px;
-background-image:url("https://cinni.net/fruitykitty/layout/nana-bg-mobile.png");
-height:600px;
-margin-top:10px;
- }
- body{
-   height:100%;
- }
- .content{
- width:95%;
- height:490px;
-     margin-top:75px;
- }
+@media screen and (max-aspect-ratio:16/9) {
+
+  .content{
+    z-index:1;
+    position:relative;
+    float:right;
+    width:80%;
+    vertical-align:top;
+    padding:10px;
+    /* below height value needs to change as is hacky */
+    height:100vh;
+    margin-top:30px;
+    }
  
- .header{
-   background:#fcf1f6;
- } */
