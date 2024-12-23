@@ -1,0 +1,193 @@
+
+body{
+background:#fcf1f6;
+color:#be778d;
+font-family: 'basiic';
+}
+
+@font-face{
+ font-family: 'basiic';
+src: url(https://cinni.net/fonts/basiic.ttf);
+}
+::selection {
+background:pink;
+color:#e000c3;
+}
+
+a{
+color:#e950d4;
+font-weight: 600;
+letter-spacing:1px;
+}
+a:hover{
+color:#f524a9;
+}
+
+hr{
+color:#be778d;
+border-top:1px solid #be778d;
+border-left:none;
+border-right:none;
+border-bottom:none;
+width:90%;
+}
+
+h1{
+text-transform:uppercase;
+background: linear-gradient(0deg, rgba(190,119,141,1) 0%, 
+rgba(190,119,141,1) 5%, rgba(235,183,194,0) 5%, rgba(249,162,243,0) 100%);
+font-size:1.2em;
+padding:1px;
+padding-left:12px;
+font-weight: bold;
+letter-spacing:2px;
+text-align:center;
+}
+
+h2{
+text-transform:uppercase;
+background: linear-gradient(90deg, rgba(249,162,243,0) 0%, rgba(235,183,194,1) 25%, rgba(235,183,194,1) 75%, rgba(249,162,243,0) 100%);
+font-size:1em;
+padding:1px;
+color:white;
+letter-spacing:2px;
+}
+
+span{
+font-weight:bold;
+}
+
+p{
+text-align:center;
+margin:15px;
+}
+
+.body{
+  margin: 0;
+  background: url("imgs/saya-bg.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.layoutimg{
+margin:0 auto;
+width:100%;
+height:auto;
+position:relative;
+z-index:0;
+}
+
+.content{
+z-index:1;
+position:relative;
+float:right;
+width:50%;
+vertical-align:top;
+padding:10px;
+height:100vh;
+margin-top:30px;
+/*background:rgba(204,129,247,0.5);*/
+}
+
+.header{
+padding:5px;
+margin:5px;
+font-size:1em;
+color:#8e00e0;
+font-weight:Bold;
+text-shadow: 0 0 5px white;
+text-align:right;
+}
+
+.nav{
+padding:5px;
+background: #fcf1f6;
+border:1px solid #be778d;
+border-radius:2px;
+margin:5px;
+font-size:.9em;
+}
+.nav a{
+margin:1px;
+padding:1px;
+}
+
+.blog{
+padding:px;
+background: #fcf1f6;
+border:1px solid #be778d;
+border-radius:2px;
+Margin:5px;
+font-size:.9em;
+height:80%;
+overflow: auto;
+}
+
+.blog img{
+width:auto;
+max-width:80%;
+height:auto;
+margin:3px;
+
+}
+
+.footer{
+text-align:right;
+font-size:.6em;
+padding:0;
+margin:5px;
+color:#e2bfe2;
+}
+
+.footer a{
+color:pink;
+background:none;
+}
+
+.icon{
+width:100px;
+height:100px;
+border:1px solid #be778d;
+padding:1px;
+margin:5px;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+background: #fcf1f6;
+}
+::-webkit-scrollbar-track {
+background: #fcf1f6;
+border-radius: 0px;
+width: 0px;
+border: 1px dotted #be778d;
+}
+::-webkit-scrollbar-thumb {
+background: #f0d0df;
+border: 1px dotted #be778d;
+border-radius: 0px;
+}
+
+/* @media screen and (max-aspect-ratio:16/9) {
+ .body{
+   width:400px;
+background-image:url("https://cinni.net/fruitykitty/layout/nana-bg-mobile.png");
+height:600px;
+margin-top:10px;
+ }
+ body{
+   height:100%;
+ }
+ .content{
+ width:95%;
+ height:490px;
+     margin-top:75px;
+ }
+ 
+ .header{
+   background:#fcf1f6;
+ } */
