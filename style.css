@@ -3,6 +3,9 @@ body{
 background:#fcf1f6;
 color:#be778d;
 font-family: 'basiic';
+margin: 0%;
+background: url("imgs/saya-bg.jpg") no-repeat;
+background-size: cover;
 }
 
 @font-face{
@@ -15,12 +18,12 @@ color:#e000c3;
 }
 
 a{
-color:#e950d4;
+color:#57979c;
 font-weight: 600;
 letter-spacing:1px;
 }
 a:hover{
-color:#f524a9;
+color:#224f55;
 }
 
 hr{
@@ -60,12 +63,22 @@ font-weight:bold;
 p{
 text-align:center;
 margin:15px;
+font-size: 1.3em;
 }
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  font-size:0.9em;
+  font-weight: 500;
+  padding:0;
+  margin:5px;
+  color:#6e007c;
+  text-shadow: 1px 1px 2px #00b2c2;;
+  }
 
 .body{
   margin: 0;
-  background: url("imgs/saya-bg.jpg") no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -104,7 +117,7 @@ text-align:right;
 
 .nav{
 padding:5px;
-background: #fcf1f6;
+background: #7c4441;
 border:1px solid #be778d;
 border-radius:2px;
 margin:5px;
@@ -113,10 +126,14 @@ font-size:.9em;
 .nav a{
 margin:1px;
 padding:1px;
+color: #6cc2c9;
+}
+.nav a:hover{
+  color: #132e2f;
 }
 
 .blog{
-padding:px;
+padding:2%;
 background: #fcf1f6;
 border:1px solid #be778d;
 border-radius:2px;
@@ -128,23 +145,10 @@ overflow: auto;
 
 .blog img{
 width:auto;
-max-width:80%;
+max-width:90%;
 height:auto;
 margin:3px;
 
-}
-
-.footer{
-text-align:right;
-font-size:.6em;
-padding:0;
-margin:5px;
-color:#e2bfe2;
-}
-
-.footer a{
-color:pink;
-background:none;
 }
 
 .icon{
@@ -154,6 +158,34 @@ border:1px solid #be778d;
 padding:1px;
 margin:5px;
 }
+
+
+.glow-text {
+  font-size: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Glow and pulsate effect on hover */
+.glow-text:hover {
+  animation: glowPulse 2s infinite alternate;
+}
+
+.glow-text:active {
+  animation: glowPulse 2s infinite alternate;
+}
+
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.8), 0 0 10px rgba(212, 0, 255, 0.6), 0 0 20px rgba(0, 221, 129, 0.945);
+    transform: scale(1);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(0, 255, 255, 1), 0 0 30px rgba(0, 255, 255, 0.8), 0 0 40px rgba(0, 255, 255, 0.6);
+    transform: scale(1.05);
+  }
+}
+
 
 /* Scrollbar styles */
 ::-webkit-scrollbar {
@@ -179,7 +211,7 @@ border-radius: 0px;
     z-index:1;
     position:relative;
     float:right;
-    width:80%;
+    width:90%;
     vertical-align:top;
     padding:10px;
     /* below height value needs to change as is hacky */
