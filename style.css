@@ -77,6 +77,11 @@ footer{
   text-shadow: 1px 1px 2px #00b2c2;;
   }
 
+li{
+  text-align: left;
+  list-style-position: inside
+}
+
 .body{
   margin: 0;
   display: flex;
