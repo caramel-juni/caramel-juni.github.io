@@ -6,6 +6,10 @@ font-family: 'basiic';
 margin: 0%;
 background: url("imgs/saya-bg.jpg") no-repeat;
 background-size: cover;
+display: flex;
+flex-direction: column;
+height: 100%;
+overflow: hidden;
 }
 
 @font-face{
@@ -71,8 +75,10 @@ footer{
   justify-content: space-between;
   font-size:0.9em;
   font-weight: 500;
-  padding:0;
-  margin:5px;
+  padding:10px;
+  padding-top: 0px;
+  margin:2px;
+  margin-bottom: 20px;
   color:#6e007c;
   text-shadow: 1px 1px 2px #00b2c2;;
   }
@@ -108,10 +114,16 @@ position:relative;
 float:right;
 width:50%;
 vertical-align:top;
-padding:10px;
+padding: 10px;
+/* testing purposes - switching text colour */
+/* color: #00e0c6; */
 /* below height value needs to change as is hacky */
-height:100vh;
+height: 100vh;
+box-sizing: border-box;
 margin-top:30px;
+display: flex;
+flex-direction: column;
+overflow: hidden;
 /*background:rgba(204,129,247,0.5);*/
 }
 
@@ -224,9 +236,21 @@ border-radius: 0px;
     width:90%;
     vertical-align:top;
     padding:10px;
+    /* testing purposes - switching text colour */
+    /* color: #e000c3; */
     /* below height value needs to change as is hacky */
     height:100vh;
     margin-top:30px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    overflow: hidden;
     }
  
   }
+
+
+
+  
+
+  
