@@ -82,6 +82,11 @@ li{
   list-style-position: inside
 }
 
+.title-link {
+  text-decoration: none;
+  color:#7f025e;
+}
+
 .body{
   margin: 0;
   display: flex;
